@@ -7,6 +7,17 @@ namespace TanksWebAppMVC.Models
 {
     public class Cannon
     {
+        public Cannon(string designation, double caliber, double shellVelocity, int maxRange, int clipSize, double intraClipReload, double reloadSpeed)
+        {
+            Designation = designation;
+            Caliber = caliber;
+            ShellVelocity = shellVelocity;
+            MaxRange = maxRange;
+            ClipSize = clipSize;
+            IntraClipReload = intraClipReload;
+            ReloadSpeed = reloadSpeed;
+        }
+
         public string Designation { get; set; }
         public double Caliber { get; set; }
         public double ShellVelocity { get; set; }
